@@ -1,6 +1,59 @@
-h1.jumbo {color:red;}
-p {color:blue;}
+body{
+    display:grid;
+    grid-template-areas: 
+        'nav nav nav'
+        'article article aside';
 
-h1#key-visual {
-background: green;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+
+nav {
+    grid-area: nav;
+}
+
+article {
+    grid-area: article;
+    clear: left;
+}
+
+aside{
+    grid-area: aside;
+}
+
+nav ol#menu li {
+    display: block;
+    float: left;
+    border: 3px solid blue;
+    background-color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 20 50px;
+    margin: 10px;
+}
+
+nav ol#menu li:hover {
+    background-color: grey;
+}
+
+/*each box consists of a margin, border, and padding. 
+- padding is distance b/w content and border
+- margin is distance between the elements*/
+table { 
+    margin: 0px;
+    font-size: 32px;
+}
+td {
+    padding: 20px;
+    border: 1px solid black;
+}
+td.first {
+    border-color: greenyellow;
+}
+b {
+    display: block;
 }
